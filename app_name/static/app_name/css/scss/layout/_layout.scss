@@ -1,0 +1,68 @@
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+@import "header/header";
+@import "header/animation";
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+@import "footer";
+
+
+#main{
+    padding-top:5%;
+  }
+  
+  .mainSection{
+    width:80%;
+    height:100%;
+    margin: auto;
+    margin-right:auto;
+  }
+  
+  .mainSectionLeft{
+      width: 80%;
+      height:100%;
+      margin-left: auto;
+      margin-right: 5%;
+  }
+  
+  .homeSec,.aboutSec,.contactSec, .portfolioSec{
+    text-align: center;
+    width:100%;
+    height: 100%;
+    
+  
+//   ! doublon
+  h2{
+      color: white;
+      font-size: 4rem;
+      text-align:center;
+      padding-top: 2%;
+      margin-bottom: 5%;
+  }
+  
+  
+  }
+  
+  
+
+  @media screen and (max-width:500px) {
+
+	
+    .homeSec h2, .aboutSec h2, .contactSec h2, .portfolioSec h2{
+      font-size: 3rem;
+      margin-bottom: 20%;
+    }
+	
+
+
+
+
+	}
+  

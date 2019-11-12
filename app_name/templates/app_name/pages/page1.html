@@ -1,0 +1,108 @@
+{% extends 'APP_NAME/base.html' %}
+
+
+{% block aside %}
+      
+                        <h3> I m a aside </h3> 
+                        <ul>
+                                <li> Elt </li>
+                                <li> Elt </li>
+                                <li> Elt </li>
+                      
+                        </ul>
+
+ 
+{% endblock %} 
+
+{% block content %}
+
+    <h1> Hello I m the main content  </h1>
+
+        
+                
+
+                <div class="row">
+                        <div class="col-12">
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseCpu" aria-expanded="false" aria-controls="collapseCpu">
+                                        Btn 01
+                                </button>
+                                <p> Selected : </p>
+                                <div class="collapse" id="collapseCpu">
+                                        <div class="card card-body">
+                                                <ul>
+                                                    
+                                                        <li class="d-flex justify-content-around">
+
+                                                                <a href="/"><i class="fas fa-info"></i></a>
+                                                        </li>
+                                                     
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-12">
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGraphicCard" aria-expanded="false" aria-controls="collapseGraphicCard">
+                                                Btn 02 
+                                        </button>
+                                        <div class="collapse" id="collapseGraphicCard">
+                                                <div class="card card-body">
+                                                        <table>
+                                                                <tr>
+                                                                        <td> Name</td>
+                                                                        <td> Manufacturer</td>
+                                                                        <td> Price</td>
+                                                                </tr>
+                                                               
+                                                                <tr>   
+                                                                        <td><a href="/"> Elt</a></td>
+                                                                        <td><a href="/"> Elt</a></td>
+                                                                        <td><a href="/"> Elt</a></td>
+
+                                                                </tr>
+                                                                
+                                                                
+                                                        </table>
+                                                </div>
+                                        </div>
+                                </div>
+                </div>
+
+<!-- Test manu cat -->
+                <div class="row">
+                        <div class="col-12">
+                                <h1> Here</h1>
+
+                                <h2> Hello </h2>
+
+                                
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-12">
+                                
+                        </div>
+                </div>
+        
+
+{% endblock %}
+
+{% block script %}
+
+<script>
+
+       $(document).ready(function(){
+                console.log("plko")
+                var btnGC = $('#btnGraphicCard');
+
+                var blockGC = $('#blockGC');
+                btnGC.click(function(){
+                        blockGC.toggle()
+
+                });
+
+       });
+</script>
+        
+{% endblock %}
+
