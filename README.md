@@ -83,3 +83,13 @@ Meta point (If using virtualenv):
     there will likely be several files in your env that contain an absolute path and will also need to be updated. 
     If you are getting errors such as ImportError: No module named ... 
     this might be the culprit. (thanks to @danyamachine for providing this).
+
+
+
+
+
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+python3 manage.py createsuperuser : https://docs.djangoproject.com/en/1.8/intro/tutorial02/
+

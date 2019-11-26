@@ -1,0 +1,108 @@
+
+/*--------------------------------------------------------------
+# Layout Team
+--------------------------------------------------------------*/
+
+#teamSec{
+    #teamSlider{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      h2{
+        font-size: 4rem;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    }
+      
+    #teamPresentation{
+        > div {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-gap: 1rem;
+        }
+    }
+  }
+
+.team-card {
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+        
+    .team-front,
+    .team-back {
+        height: 13rem;
+        width: 13rem;
+        border-radius: 50%;
+        position: relative;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        -webkit-transition: -webkit-transform 1.0s;
+                transition: transform 1.0s;
+        h3{
+            font-size: 1.75rem;        
+
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .team-back {
+        color:white;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $secondaryColor;
+        text-align: center;
+        // padding-top: 25%;
+        -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+    }
+
+
+    &:hover .team-front {
+        -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+    }
+
+    &:hover .team-back {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+    }
+}  
+  /*--------------------------------------------------------------
+  # Media Query Team
+  --------------------------------------------------------------*/
+  
+  @media screen and (max-width: 1023px) {
+    #teamSec{ 
+      padding-top: 0!important;
+      #teamPresentation{
+        padding: 0 2rem;
+          > div:first-child {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+          }
+      }
+    }
+  }
+  
+
+  @media screen and (max-width: 361px) {
+    #teamSec{  
+      #teamPresentation{
+        padding: 0 2rem;
+        > div:first-child {
+          display: flex;
+          justify-content: center!important;
+        }
+      }
+    }
+  }
+
+// 

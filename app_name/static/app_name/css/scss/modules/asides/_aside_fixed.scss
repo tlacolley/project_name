@@ -1,0 +1,14 @@
+.sidebar-fixed {
+    right:2%;
+    top: 0;
+    z-index: 10;
+    ul{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+
+    }
+
+}

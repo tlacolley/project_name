@@ -1,0 +1,133 @@
+{% extends 'app_name/base.html' %}
+
+
+
+{% block content %}
+
+
+<div class="row text-center">
+
+        <!-- Section presentation / Img  -->
+        <div class="col-12 ">
+                <h1> Hello I m the main content  </h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quaerat aliquam officiis maxime incidunt laboriosam, 
+                        quidem commodi sit doloremque, dolorum tempore dicta 
+                        earum eius amet sunt quos ullam similique! Blanditiis, at.</p>
+
+                <div class="row layoutImg">
+                        <div class="col-lg-4 col-12 mb-3 position-relative ">
+                                <img src="https://picsum.photos/400" alt="">
+                                <div class="position-absolute textImg">
+                                        <h2> Title Here </h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Quaerat aliquam officiis maxime incidunt laboriosam, </p>
+                                </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-12 mb-3">
+                                 <img src="https://picsum.photos/400" alt="">
+                                 <div class="position-absolute textImg">
+                                        <h2> Title Here </h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Quaerat aliquam officiis maxime incidunt laboriosam, </p>
+                                </div>
+                         </div>
+                        <div class="col-lg-4 col-12 mb-3">
+                                <img src="https://picsum.photos/400" alt="">
+                                <div class="position-absolute textImg">
+                                        <h2> Title Here </h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Quaerat aliquam officiis maxime incidunt laboriosam, </p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <!-- Section presentation / Img  -->
+
+        <div class="col-12">
+                <h2> Articles </h2>
+        </div>
+<!-- Section Team  -->
+<div class="col-12">
+        {% include 'app_name/modules/teams/team01.html' %}
+
+</div>
+
+
+<!-- Section Team flip  -->
+<div class="col-12">
+        {% include 'app_name/modules/teams/team_round_flip.html' %}
+
+</div>
+
+
+<!-- Section Contact   -->
+<div class="col-12">
+        <H2>Contact</H2>
+        <section class="bg-secondary">
+                <div class="container ">
+                <form class="form-horizontal m-5" action="" method="post">
+                <fieldset>
+                <legend class="text-center mt-5">Contact us</legend>
+        
+                <!-- Name input-->
+                <div class="form-group row">
+                <label class="col-3 control-label" for="name">Name</label>
+                <div class="col-9">
+                        <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                </div>
+                </div>
+        
+                <!-- Email input-->
+                <div class="form-group row">
+                <label class="col-3 control-label" for="email">Your E-mail</label>
+                <div class="col-9">
+                        <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                </div>
+                </div>
+        
+                <!-- Message body -->
+                <div class="form-group row">
+                <label class="col-md-3 control-label" for="message">Your message</label>
+                <div class="col-md-9">
+                        <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                </div>
+                </div>
+        
+                <!-- Form actions -->
+                <div class="form-group row">
+                <div class="col-md-12 text-right">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                </div>
+                </div>
+                </fieldset>
+                </form>
+
+                </div>
+
+        </section>
+
+</div>
+
+
+        
+                
+
+
+{% endblock %}
+
+{% block script %}
+
+<script>
+       $(document).ready(function(){
+                console.log("Hello")
+
+
+
+       });
+</script>
+        
+{% endblock %}
+
